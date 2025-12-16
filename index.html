@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>Amitha | My Sweet Space</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", sans-serif;
+    background: linear-gradient(to bottom, #fff1f4, #ffffff);
+    color: #4a2c2a;
+}
+
+
+header {
+    background: linear-gradient(135deg, #f7b2bd, #f3c1c6);
+    padding: 55px 20px;
+    text-align: center;
+    color: #5a1f1f;
+}
+
+header h1 {
+    font-size: 44px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+nav {
+    margin-top: 30px;
+}
+
+nav a {
+    text-decoration: none;
+    margin: 0 16px;
+    font-weight: 600;
+    color: #6b2b2b;
+    position: relative;
+}
+
+nav a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #6b2b2b;
+    left: 0;
+    bottom: -5px;
+    transition: 0.3s;
+}
+
+nav a:hover::after {
+    width: 100%;
+}
+
+
+.section {
+    background: white;
+    margin: 45px auto;
+    padding: 55px;
+    max-width: 1000px;
+    border-radius: 22px;
+    box-shadow: 0 12px 35px rgba(0,0,0,0.08);
+}
+
+.section h2 {
+    font-size: 30px;
+    color: #7a2e2e;
+    margin-bottom: 20px;
+}
+
+
+.about-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+}
+
+.about-table th,
+.about-table td {
+    border: 1px solid #e5bfc3;
+    padding: 14px;
+    text-align: center;
+}
+
+.about-table th {
+    background-color: #fbe1e6;
+    color: #7a2e2e;
+}
+
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 22px;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 20px;
+    box-shadow: 0 8px 22px rgba(0,0,0,0.12);
+    transition: transform 0.4s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* CONTACT */
+.contact-container {
+    text-align: center;
+}
+
+.contact-details {
+    margin-bottom: 25px;
+    line-height: 1.8;
+}
+
+.contact-details strong {
+    color: #7a2e2e;
+}
+.contact-card {
+    display: flex;
+    justify-content: center;   
+    align-items: center;       
+    text-align: center;
+}
+
+
+
+</style>
+</head>
+
+<body>
+
+<header>
+    <h1>Hi, I’m Amitha 🌸</h1>
+    <p>Welcome to my calm, cozy and creative world</p>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About Me</a>
+        <a href="#gallery">My Gallery</a>
+        <a href="#contact">Contact Me</a>
+    </nav>
+</header>
+
+<section id="home" class="section">
+    <h2>Home</h2>
+    <p>
+        Hello! I’m <strong>Amitha</strong>.  
+        This space is a reflection of who I am — someone who loves learning,
+        creating beautiful things, and growing step by step.
+        I believe in calm progress, meaningful work, and enjoying the little joys in life ✨
+    </p>
+</section>
+
+<section id="about" class="section">
+    <h2>About Me</h2>
+
+    <p>
+        I am currently working as a <strong>Developer Intern at Zemoso Technologies</strong>,
+        where I am building a strong foundation in software development.
+        I enjoy solving problems, designing clean interfaces, and constantly learning new things.
+    </p>
+
+    <p>
+        Outside of work, I’m someone who values peace, creativity, and self-improvement.
+        I love spending time at home listening to music, exploring new hobbies,
+        and dreaming about the future I’m working towards 💗
+    </p>
+
+    <table class="about-table">
+        <tr>
+            <th>My Hobbies</th>
+            <th>Dream Destinations</th>
+            <th>Favourite Food</th>
+        </tr>
+        <tr>
+            <td>Cooking</td>
+            <td>Paris</td>
+            <td>Desserts</td>
+        </tr>
+        <tr>
+            <td>Creative art work</td>
+            <td>Ladakh</td>
+            <td>Italian and chinese cuisine</td>
+        </tr>
+        <tr>
+            <td>Listening to Music</td>
+            <td>Iceland</td>
+            <td>South Indian Meals</td>
+        </tr>
+    </table>
+</section>
+
+<section id="gallery" class="section">
+    <h2>My Gallery</h2>
+
+    <div class="gallery">
+        <img src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131">
+        <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba">
+        <img src="https://images.unsplash.com/photo-1507149833265-60c372daea22?w=800&auto=format&fit=crop" alt="Cute Cat">
+
+        <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb">
+    </div>
+</section>
+
+<section id="contact" class="section">
+    <h2>Contact Me</h2>
+
+    <div class="contact-container">
+
+        <p style="margin-bottom: 30px;">
+            I’m always happy to connect, collaborate, or simply have a meaningful conversation 🌷  
+            Feel free to reach out through any of the details below.
+        </p>
+
+        <div style="
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        ">
+
+            <div style="
+                background: #fff7f9;
+                padding: 25px 30px;
+                border-radius: 18px;
+                width: 260px;
+                box-shadow: 0 8px 22px rgba(0,0,0,0.08);
+            ">
+                <h3 style="margin-top: 0;">📞 Phone</h3>
+                <p>7842640103</p>
+            </div>
+
+            <div style="
+                background: #fff7f9;
+                padding: 25px 30px;
+                border-radius: 18px;
+                width: 260px;
+                box-shadow: 0 8px 22px rgba(0,0,0,0.08);
+            ">
+                <h3 style="margin-top: 0;">✉️ Email</h3>
+                <p class="contact-card">amithasreemurarishetty@gmail.com</p>
+            </div>
+
+            <div style="
+                background: #fff7f9;
+                padding: 25px 30px;
+                border-radius: 18px;
+                width: 260px;
+                box-shadow: 0 8px 22px rgba(0,0,0,0.08);
+            ">
+                <h3 style="margin-top: 0;">🌐 Location</h3>
+                <p>India</p>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+</body>
+</html>
